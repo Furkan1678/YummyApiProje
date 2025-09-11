@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.14.36408.4 d17.14
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiProjeKampi.WebApi", "ApiProjeKampi.WebApi\ApiProjeKampi.WebApi.csproj", "{C7747D41-EF8A-4A8C-ACD8-38FB9561FB79}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApiProjeKampi.WebUI", "ApiProjeKampi.WebUI\ApiProjeKampi.WebUI.csproj", "{AD016F01-1AEE-4D5C-9D38-6A5B9C5182A3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{C7747D41-EF8A-4A8C-ACD8-38FB9561FB79}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7747D41-EF8A-4A8C-ACD8-38FB9561FB79}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7747D41-EF8A-4A8C-ACD8-38FB9561FB79}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7747D41-EF8A-4A8C-ACD8-38FB9561FB79}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AD016F01-1AEE-4D5C-9D38-6A5B9C5182A3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AD016F01-1AEE-4D5C-9D38-6A5B9C5182A3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AD016F01-1AEE-4D5C-9D38-6A5B9C5182A3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AD016F01-1AEE-4D5C-9D38-6A5B9C5182A3}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E7F1ED2F-2460-46BA-A9DC-0011F8BE0D6F}
+	EndGlobalSection
+EndGlobal

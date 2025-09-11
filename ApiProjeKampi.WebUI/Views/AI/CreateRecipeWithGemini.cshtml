@@ -1,0 +1,47 @@
+﻿@{
+    ViewData["Title"] = "CreateRecipeWithGemini";
+    Layout = "~/Views/AdminLayout/Index.cshtml"; 
+    var recipeText = ViewBag.recipe?.ToString();
+    var recipeLines = recipeText?.Split('\n');
+}
+
+<section class="section">
+    <div class="section-body">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="card shadow-lg border-0">
+                    <div class="card-header bg-primary text-white">
+                        <h4><i class="fas fa-utensils"></i> Gemini AI ile Yemek Tarifi Önerisi</h4>
+                    </div>
+                    <div class="card-body">
+                        <form method="post" asp-action="CreateRecipeWithGemini" asp-controller="AI">
+                            <div class="form-group">
+                                <label for="prompt" class="font-weight-bold">Elinizdeki Malzemeler ve Anahtar Kelimeler</label>
+                                <input type="text" name="prompt" id="prompt" class="form-control" placeholder="örn: patates, soğan, yumurta" />
+                            </div>
+                            <button type="submit" class="btn btn-primary mt-3">
+                                <i class="fas fa-magic"></i> Tarif Önerisi Oluştur
+                            </button>
+                        </form>
+
+
+                        @if (!string.IsNullOrEmpty(recipeText))
+                        {
+                            <div class="alert alert-success mt-4">
+                                <h5><i class="fas fa-lightbulb"></i> Önerilen AI Yemek Tarifi</h5>
+                                <ul class="list-group list-group-flush">
+                                    @foreach (var line in recipeLines)
+                                    {
+                                        if (!string.IsNullOrWhiteSpace(line))
+                                        {
+                                            <li class="list-group-item text-dark font-weight-600">@line</li>
+                                        }
+                                    }
+                                </ul>
+                            </div>
+                        }
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

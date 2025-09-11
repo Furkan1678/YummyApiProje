@@ -1,0 +1,47 @@
+﻿@model ApiProjeKampi.WebUI.Dtos.ChefDtos.CreateChefDto
+
+@{
+    ViewData["Title"] = "CreateChef";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+
+
+
+
+
+<section class="section">
+    <div class="section-body">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Şef Oluşturma Sayfası</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <form method="post">
+
+                            <label>Şef Adı</label>
+                            <input type="text" asp-for="NameSurname" class="form-control" /> <br />
+                            <label>Şef Başlığı</label>
+                            <input type="text" asp-for="Title" class="form-control" /> <br />
+                            <label>Şef Resmi</label>
+                            <input type="text" asp-for="ImageUrl" class="form-control" /> <br />
+                            <label>Şef Açıklaması</label>
+                            <textarea asp-for="Description" class="form-control" rows="5"></textarea>
+                            <button class="btn btn-primary">Şef Oluştur</button>
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+

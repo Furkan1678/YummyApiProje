@@ -1,0 +1,73 @@
+﻿@model List<ApiProjeKampi.WebUI.Dtos.FeatureDtos.ResultFeatureDto>
+
+@{
+    ViewData["Title"] = "FeatureList";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+    int count = 0;
+}
+
+
+
+
+<section class="section">
+    <div class="section-body">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Öne Çıkan Alan İşlemleri</h4>
+                    </div>
+                    <div class="card-body">
+                        <table class="table">
+                            <thead>
+                                <tr>
+                                    <th scope="col">Başlık</th>
+                                    <th scope="col">Alt Başlık</th>
+                                    <th scope="col">Açıklama</th>
+                                    <th scope="col">Sil</th>
+                                    <th scope="col">Güncelle</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                @foreach (var item in Model)
+                                {
+                                    count++;
+                                    <tr>
+                                        <th scope="row">@count</th><!-- VEYA@item.CategoryId -->
+                                        <td>@item.Title</td>
+                                        <td>@item.SubTitle</td>
+                                        <td>@item.Description</td>
+                                        <td><a href="/Feature/DeleteFeature/@item.FeatureId" class="btn btn-danger">Sil</a></td>
+                                        <td><a href="/Feature/UpdateFeature/@item.FeatureId" class="btn btn-success">Güncelle</a></td>
+                                    </tr>
+                                }
+                                @if (Model.Count ==1)
+                                {
+                                    <a href="#" class="btn btn-dark" onclick="return false;">Feature Mevcut</a>
+
+                                }
+                                else
+                                {
+                                    <a href="/Category/CreateCategory/" class="btn btn-dark">Feature Ekle</a>
+
+                                }
+
+                            </tbody>
+                        </table>
+
+                    
+
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+

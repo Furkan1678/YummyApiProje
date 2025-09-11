@@ -1,0 +1,50 @@
+﻿@model ApiProjeKampi.WebUI.Dtos.ContactDtos.CreateContactDto
+
+@{
+    ViewData["Title"] = "CreateContact";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+
+<section class="section">
+    <div class="section-body">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>İletişim ekleme Sayfası</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <form method="post">
+                            <label>Adres Adı</label>
+                            <input type="text" asp-for="Adress" class="form-control" /> <br />
+                            <label>Telefon Adı</label>
+                            <input type="tel" asp-for="Phone" class="form-control" /> <br />
+                            <label>Email Adresi</label>
+                            <input type="email" asp-for="Email" class="form-control" /> <br />
+                            <label>Açık Saatler</label>
+                            <input type="text" asp-for="OpenHours" class="form-control" /> <br />
+                            <label>Harita Lokasyonu</label>
+                            <input type="text" asp-for="MapLocation" class="form-control" /> <br />
+                       
+                            <button class="btn btn-primary">İteşim Oluştur</button>
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
+

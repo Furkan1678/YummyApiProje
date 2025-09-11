@@ -1,0 +1,36 @@
+﻿@model ApiProjeKampi.WebUI.Dtos.MessageDtos.GetMessageByIdDto
+@{
+	ViewData["Title"] = "AnswerMessageWithGemini";
+	Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+<section class="section">
+	<div class="section-body">
+		<div class="row">
+			<div class="col-12 col-md-12 col-lg-12">
+				<div class="card">
+					<div class="card-header">
+						<h4>Gemini İle Otomatik Mesaj Sayfası</h4>
+					</div>
+					<div class="card-body">
+
+						<form method="post">
+							<input type="hidden" asp-for="MessageId" value="" />
+							<label>Müşteri Mesajı</label>
+							<textarea class="form-control" asp-for="MessageDetails" rows="5"></textarea> <br />
+							<label>Gemini Otomatik Cevabı</label>
+							<textarea class="form-control" rows="5">@ViewBag.Answer</textarea> <br />
+							<button class="btn btn-dark">Cevabı Mail Olarak Gönder</button>
+						</form>
+
+					</div>
+				</div>
+
+
+			</div>
+
+		</div>
+	</div>
+</section>
+
+

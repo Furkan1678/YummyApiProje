@@ -1,0 +1,64 @@
+﻿@model ApiProjeKampi.WebUI.Dtos.ReservationDtos.GetReservationByIdDto
+
+@{
+    ViewData["Title"] = "UpdateReservation";
+    Layout = "~/Views/AdminLayout/Index.cshtml";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+<section class="section">
+    <div class="section-body">
+        <div class="row">
+            <div class="col-12 col-md-12 col-lg-12">
+                <div class="card">
+                    <div class="card-header">
+                        <h4>Rezervasyon Güncelleme Sayfası</h4>
+                    </div>
+                    <div class="card-body">
+
+                        <form method="post">
+                            <input type="hidden" asp-for="ReservationId" />
+                            <label>Misafir Adı Soyadı</label>
+                            <input type="text" asp-for="NameSurname" class="form-control" /> <br />
+                            <label>Misafir Email</label>
+                            <input type="text" asp-for="Email" class="form-control" /> <br />
+                            <label>Misafir Telefon</label>
+                            <input type="tel" asp-for="PhoneNumber" class="form-control" /> <br />
+                            <label>Rezervasyon Tarihi</label>
+                            <input type="date" asp-for="ReservationDate" class="form-control" rows="5" /><br />
+                            <label>Rezervasyon Saati</label>
+                            <input type="time" asp-for="ReservationTime" class="form-control" rows="5" /><br />
+                            <label>Kişi Sayısı</label>
+                            <input type="Number" asp-for="CountofPeople" class="form-control" rows="5" /><br />
+                            <label>Misafir Mesajı</label>
+                            <input type="text" asp-for="Message" class="form-control" rows="5" /><br />
+                            <label>Rezervasyon Durumu</label>
+                            <input type="text" asp-for="ReservationStatus" readonly class="form-control" rows="5" /><br />
+                            <button class="btn btn-primary">Rezervasyonu Güncelle</button>
+                        </form>
+
+                    </div>
+                </div>
+
+
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+
+
+
