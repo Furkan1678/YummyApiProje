@@ -813,6 +813,16 @@
   },
   {
     "ContainingType": "ApiProjeKampi.WebApi.Controllers.ReservationsController",
+    "Method": "GetReservationStats",
+    "RelativePath": "api/Reservations/GetReservationStats",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ApiProjeKampi.WebApi.Controllers.ReservationsController",
     "Method": "GetTotalCustomerCount",
     "RelativePath": "api/Reservations/GetTotalCustomerCount",
     "HttpMethod": "GET",

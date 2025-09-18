@@ -1259,6 +1259,18 @@
         }
       }
     },
+    "/api/Reservations/GetReservationStats": {
+      "get": {
+        "tags": [
+          "Reservations"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
     "/api/Services": {
       "get": {
         "tags": [
